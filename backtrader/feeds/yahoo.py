@@ -319,7 +319,7 @@ class YahooFinanceData(YahooFinanceCSVData):
             bt.TimeFrame.Days: "1d",
             bt.TimeFrame.Weeks: "1wk",
             bt.TimeFrame.Months: "1mo",
-            "Hour": "60m",
+            "Hour": "1h",
         }
 
         urlargs.append("interval={}".format(intervals[self.p.timeframe]))
